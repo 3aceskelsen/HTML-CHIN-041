@@ -1,0 +1,34 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global Styles */
+
+/* Global Layout */
+body {background:url(images/backgrounds/chinese_background.jpg) no-repeat 0px 0px; background-size: cover; }
+.logo {position:absolute; top: 0em; left: 0em; height: 4.3em; }
+.logo_symbol {position:absolute; top: 0em; right: 0em; }
+
+nav { position: absolute; bottom: 3em; left: 2em; }
+nav a { padding: 15px 15px 15px 30px; background: url(images/go.png) no-repeat 0px 7px; }
+
+/* Page-specific Styles */
+.home h1 { margin: 1em 0em .8em 0em; font-weight: normal; font-family: Georgia; font-size: 3em; color: #489602; line-height: .5em; }
+.home {display:inline-block; width: 40%; padding: 4em 2em; }
+.home_right {display:inline-block; width:40%; }
+
+.beautiful1, .friendship1, .truth1, .wisdom1 { -webkit-transition: -webkit-transform 1s ease-in-out; }
+
+.beautiful1 	{ position: absolute; -webkit-transform: translate3d(14em,7em,1em); }
+.friendship1	{ position: absolute; -webkit-transform: translate3d(17em,2em,3em); }
+.truth1   		{ position: absolute; -webkit-transform: translate3d(21em,5em,3em); }
+.wisdom1  		{ position: absolute; -webkit-transform: translate3d(6em,12em,10em); }
+
+
+/* Page-specific Layout */
+
+
+/* Orientation-specific Layout - Landscape */
+/*home.landscape  { position: relative; width: 1024px; height: 748px; overflow: hidden; }*/
+
+/* Orientation-specific Layout - Portrait */
+/*.home.portrait { position: relative; width: 768px; height: 1004px; overflow: hidden; }*/
