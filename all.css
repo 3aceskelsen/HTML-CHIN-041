@@ -2,19 +2,26 @@
 /* CSS Document */
 
 /* Global Styles */
+a:link {color:#6F0;}
+a:visited {color:#6F9;}
+a:hover {color:#9C0;}   /* mouse over link */
+a:active {color:#6CC;}
 
 /* Global Layout */
 body {background:url(images/backgrounds/chinese_background.jpg) no-repeat 0px 0px; background-size: cover; }
 .logo {position:absolute; top: 0em; left: 0em; height: 4.3em; }
-.logo_symbol {position:absolute; top: 0em; right: 0em; }
+.logo_symbol {position:absolute; top: 0em; right: 0em; height: 5em; opacity:0.5; filter:alpha(opacity=40);} /*filter is for older internet explorer*/
 
-nav { position: absolute; bottom: 3em; left: 2em; }
-nav a { padding: 15px 15px 15px 30px; background: url(images/go.png) no-repeat 0px 7px; }
+nav { position: absolute; bottom: 5em; left: 2em; }
+nav a {background: url(images/go.png) no-repeat; }
+
 
 /* Page-specific Styles */
 .home h1 { margin: 1em 0em .8em 0em; font-weight: normal; font-family: Georgia; font-size: 3em; color: #489602; line-height: .5em; }
 .home {display:inline-block; width: 40%; padding: 4em 2em; }
 .home_right {display:inline-block; width:40%; }
+
+body.style2 {background:url(images/backgrounds/chinese_background2.jpg) no-repeat 0px 0px; background-size: cover; }
 
 .beautiful1, .friendship1, .truth1, .wisdom1 { -webkit-transition: -webkit-transform 1s ease-in-out; }
 
