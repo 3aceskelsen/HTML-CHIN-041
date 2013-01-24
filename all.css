@@ -58,7 +58,7 @@ footer span  {
 
 																	/* Global Layout */
 body {
-	background:url(images/backgrounds/chinese_background.jpg) no-repeat 0px 0px;
+	background:url(images/backgrounds/chinese_background.png) no-repeat 0px 0px;
 	background-size: cover;
 	margin:0;
 	}
@@ -92,43 +92,23 @@ footer {
 	bottom: 2em;
 	right:1em;
 	}
-																/* Page-specific Styles Landscape */
-body.style2 {
-	background:url(images/backgrounds/chinese_background2.jpg) no-repeat 0px 0px; 
-	background-size: cover;
-	}
-	/*home landscape*/
-.home_main p {
-	font-size: 1.3em;
-	}
-	/*vocab landscape*/
-.vocab_instruction h1 {
-	font-size:2em;
-	}
-.vocab_define p.font-bold{
-	font-size:1.6em;
-	font-weight:bold;
-	margin-bottom: 0em;
-}
-.vocab_define p.font-normal{
-	font-size:1.4em;
-	font-style:italic;
-	margin-top: 0em;
-}
-	/*contact us landscape*/
-.contact_content p {
-	font-size: 1.5em;
-	}
-																/* Page-specific Layout Landscape*/
+															/* Page-specific Layout/style Landscape*/
 .beautiful1, .friendship1, .truth1, .wisdom1 {
 	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
 	/*home landscape*/
+body.style2 {
+	background:url(images/backgrounds/chinese_background2.png) no-repeat 0px 0px; 
+	background-size: cover;
+}
 .home_main {
 	margin-left: 2.564%;
 	margin right: 50%;
 	margin-top: 4.5em;
+}
+.home_main p {
+	font-size: 1.3em;
 }
 .home_main_content {
 	margint-left: 8.119%;
@@ -164,29 +144,47 @@ body.style2 {
 	margin-top: 4.5em;
 	text-align:center;
 }
+.vocab_define p.font-normal{
+	font-size:1.4em;
+	font-style:italic;
+	margin-top: 0em;
+}
+.vocab_define p.font-bold{
+	font-size:1.6em;
+	font-weight:bold;
+	margin-bottom: 0em;
+}
 .vocab_vocab {
 	display:inline-block; 
 	width: 50.269%; 
+	height: 20em;
 	margin-left: 1.28%; 
 	margin-right: 1.28%; 
-	margin-top: 4.5em;	
+	margin-top: 20%;
+	background-image: url(images/backgrounds/shaded-background.png);
+	background-repeat: repeat-y;
+	background-size: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .vocab_instruction {
 	position:absolute;
 	bottom: 3em;
 	right: 4em;
 }
+.vocab_instruction h1 {
+	font-size:2em;
+}
 .vocab_vocab .thumbnails {
-	float:left;
+	display:inline-block;
 	margin: 0em 2em 2em 0px;
 	display:inline-block;
 }
+.vocab_define .vocab_img {
+	height: 9em;	
+}
 .vocab_vocab .thumbnails img {
 	height:5em;	
-}
-.detail {			/*currently not being used*/
-	border-right: 2px solid rgba(102,0,153,1);
-	float: left;
 }
 	/*contact us landscape*/
 .contact_contact-us { 
@@ -198,13 +196,17 @@ body.style2 {
 	margin-left: 10.684%;
 	margin-right: 50%;
 }
+.contact_content p {
+	font-size: 1.5em;
+}
 															/* Page-specific Layout Portrait*/
 @media screen and (max-width: 768px) {
 		/* Global Layout */
 body {
-	background:url(images/backgrounds/portrait_background2.jpg) no-repeat 0px 0px;
+	background:url(images/backgrounds/portrait_background2.png) no-repeat 0px 0px;
 	background-size: cover;
 	margin:0;
+	white-space:nowrap;
 }
 		/*home portrait*/
 .home_main {
@@ -216,7 +218,7 @@ body {
 
 		/*vocab portrait*/
 body.style2 {
-	background:url(images/backgrounds/portrait_background.jpg) no-repeat 0px 0px; 
+	background:url(images/backgrounds/portrait_background.png) no-repeat 0px 0px; 
 	background-size: cover;
 	}
 .vocab_define {
@@ -228,12 +230,17 @@ body.style2 {
 	text-align:center;	
 }
 .vocab_vocab {
-	margin-top:1em;
+	margin-top:.5em;
 	margin-left:auto;
 	margin-right:auto;
 	margin-bottom:3em;
 	width:94.872%;
-	display:block;		
+	display:block;
+	background-image: url(images/backgrounds/shaded-background-vertical.png);
+	background-repeat: repeat-x;
+	background-size: .3%;
+	overflow-x:scroll;
+	overflow-y:hidden;
 }	
 .vocab_instruction {
 	position:absolute;
@@ -241,17 +248,11 @@ body.style2 {
 	right: 5em;
 }
 .vocab_vocab .thumbnails {
-	float:left;
-	margin: 0em 2em 2em 0em;
 	display:inline-block;
+	margin: 0em 2em 2em 0em;
 }
 .vocab_vocab .thumbnails img {
-	height:5em;	
-}
-.detail { 			/*border between vocab and large thumbnail  - currently not being used*/
-	border-bottom: 2px solid rgba(102,0,153,1);
-	margin: 0em 0em 1.5em 0em;
-	float:none;
+	height:4em;	
 }
 		/*contact us portrait*/
 .contact_contact-us { 
@@ -282,5 +283,4 @@ body.style2 {
 	top: 51%;
 	left: 49%;
 }
-
 }
