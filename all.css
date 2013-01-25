@@ -3,16 +3,16 @@
 
 																	/* Global Styles */
 a:link {
-	color:#6F0;
+	color:#639;
 	}
 a:visited {
-	color:#6F9;
+	color:#606;
 	}
 a:hover {
-	color:#9C0;
+	color:#603;
 	}   /* mouse over link */
 a:active {
-	color:#6CC;
+	color:#696;
 	}
 
 body {
@@ -82,10 +82,10 @@ nav {
 	bottom: 3em;
 	left: 2em;
 	}
-nav a {
+/*nav a {
 	background: url(images/go.png) no-repeat;
 	padding: 0em 1em 0em 0em;
-	}
+	}*/
 
 footer {
 	position: absolute;
@@ -162,8 +162,8 @@ body.style2 {
 	margin-right: 1.28%; 
 	margin-top: 20%;
 	background-image: url(images/backgrounds/shaded-background.png);
-	background-repeat: repeat-y;
-	background-size: 100%;
+	background-repeat: repeat;
+	/*background-size: 100%;*/
 	overflow-y: scroll;
 	overflow-x: hidden;
 }
@@ -180,8 +180,8 @@ body.style2 {
 	margin: 0em 2em 2em 0px;
 	display:inline-block;
 }
-#vocab_define .vocab_img {
-	height: 9em;	
+#vocab_define .vocab_img img{
+	height: 13em; /*changed from 9em*/	
 }
 .vocab_vocab .thumbnails img {
 	height:5em;	
@@ -202,85 +202,91 @@ body.style2 {
 															/* Page-specific Layout Portrait*/
 @media screen and (max-width: 768px) {
 		/* Global Layout */
-body {
-	background:url(images/backgrounds/portrait_background2.png) no-repeat 0px 0px;
-	background-size: cover;
-	margin:0;
-	white-space:nowrap;
-}
-		/*home portrait*/
-.home_main {
-	margin-left: 4.762%;
-}
-.home_main_content {
-	margint-left: 20.635%;
-}
-
-		/*vocab portrait*/
-body.style2 {
-	background:url(images/backgrounds/portrait_background.png) no-repeat 0px 0px; 
-	background-size: cover;
+	body {
+		background:url(images/backgrounds/portrait_background2.png) no-repeat 0px 0px;
+		background-size: cover;
+		margin:0;
+		white-space:nowrap;
 	}
-#vocab_define {
-	margin-top:4.5em;
-	margin-left:auto;
-	margin-right:auto;
-	width:94.872%;
-	display:block;
-	text-align:center;	
-}
-.vocab_vocab {
-	margin-top:.5em;
-	margin-left:auto;
-	margin-right:auto;
-	margin-bottom:3em;
-	width:94.872%;
-	display:block;
-	background-image: url(images/backgrounds/shaded-background-vertical.png);
-	background-repeat: repeat-x;
-	background-size: .3%;
-	overflow-x:scroll;
-	overflow-y:hidden;
-}	
-.vocab_instruction {
-	position:absolute;
-	bottom: 3em;
-	right: 5em;
-}
-.vocab_vocab .thumbnails {
-	display:inline-block;
-	margin: 0em 2em 2em 0em;
-}
-.vocab_vocab .thumbnails img {
-	height:4em;	
-}
-		/*contact us portrait*/
-.contact_contact-us { 
-	margin-left: 4.762%;
-	margin-top: 4.5em;
-}
-.contact_content {
-	margin-left: 20.635%;
-}
+			/*home portrait*/
+	.home_main {
+		margin-left: 4.762%;
+	}
+	.home_main_content {
+		margint-left: 20.635%;
+	}
 	
-.beautiful1 { 
-	position: absolute;
-	top: 60%;
-	left: 29%;
-}
-.friendship1 { 
-	position: absolute;
-	top: 69%;
-	left: 23%;
-}
-.truth1 { 
-	position: absolute;
-	top: 73%;
-	left: 40%;
-}
-.wisdom1 { 
-	position: absolute;
-	top: 51%;
-	left: 49%;
-}
+			/*vocab portrait*/
+	body.style2 {
+		background:url(images/backgrounds/portrait_background.png) no-repeat 0px 0px; 
+		background-size: cover;
+		}
+	#vocab_define {
+		margin-top:3.5em;
+		margin-left:auto;
+		margin-right:auto;
+		width:94.872%;
+		display:block;
+		text-align:center;	
+	}
+	.vocab_vocab {
+		margin-top:.5em;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:3em;
+		width:94.872%;
+		display:block;
+		background-image: url(images/backgrounds/shaded-background-vertical.png);
+		background-repeat: repeat;
+		/*background-size: .3%;*/
+		overflow-x:scroll;
+		overflow-y:hidden;
+	}
+	.vocab_instruction h1 {
+		font-size:1.5em;
+	}
+	.vocab_instruction {
+		position:absolute;
+		bottom: 1.8em;
+		right: 5em;
+	}
+	.vocab_vocab .thumbnails {
+		display:inline-block;
+		margin: 0em 2em 2em 0em;
+	}
+	.vocab_vocab .thumbnails img {
+		height:4em;	
+	}
+	#vocab_define .vocab_img img{
+		height: 9em; 
+	}
+			/*contact us portrait*/
+	.contact_contact-us { 
+		margin-left: 4.762%;
+		margin-top: 4.5em;
+	}
+	.contact_content {
+		margin-left: 20.635%;
+	}
+		
+	.beautiful1 { 
+		position: absolute;
+		top: 60%;
+		left: 29%;
+	}
+	.friendship1 { 
+		position: absolute;
+		top: 69%;
+		left: 23%;
+	}
+	.truth1 { 
+		position: absolute;
+		top: 73%;
+		left: 40%;
+	}
+	.wisdom1 { 
+		position: absolute;
+		top: 51%;
+		left: 49%;
+	}
 }

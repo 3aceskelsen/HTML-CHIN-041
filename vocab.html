@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Vocab</title>
 	<link rel="stylesheet" type="text/css" href="all.css">
@@ -8,12 +9,14 @@
 </head>
 <script type="text/javascript">
 	$(document).ready(function() {							//	This runs the following code when the document is finished loading
-		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on 
-			//var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");
-			var page = $(this).attr("class").split(" ")[1] + ".html"; //this refers to the thumbnail div
+		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on click calls the function
+			/*var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");*/
+// below a var is created called page, then jQuery funs .click because of the this, then finds the attr class within the .thumbnails 
+	//and splits it into two and we take the second [1] and and html behind it.
+			var page = $(this).attr("ref"); //this refers to the thumbnail div
 			$.ajax({
-				"url":"includes/images-html/"+page, 
-				"success":function(data,textStatus,jqXHR){
+				"url":""+page, //adding var page here, which essentially adds the second class name + .html
+				"success":function(data,textStatus,jqXHR){ //after it has successfully loaded var page it will replace the #vocab_define with the data (from other html)
 					$("#vocab_define").replaceWith(data);
 				}
 			});
@@ -34,88 +37,88 @@
 	</div>
 	</div>
 	<div class="vocab_vocab">
-		<div class="thumbnails logo">
+		<div class="thumbnails" ref="includes/images-html/logo.html">
 			<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails byu">
+		<div class="thumbnails" ref="includes/images-html/byu.html">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails beautiful">
+		<div class="thumbnails" ref="includes/images-html/beautiful.html">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails friendship">
+		<div class="thumbnails" ref="includes/images-html/friendship.html">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails go">
+		<div class="thumbnails" ref="includes/images-html/go.html">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails love">
+		<div class="thumbnails" ref="includes/images-html/love.html">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails strong">
+		<div class="thumbnails" ref="includes/images-html/strong.html">
 			<img src="images/strong.png" />
 		</div>
-		<div class="thumbnails truth">
+		<div class="thumbnails" ref="includes/images-html/truth.html">
 			<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails logo">
+		<div class="thumbnails" ref="includes/images-html/logo.html">
 			<img src="images/logo.png" />
 		</div>
 	<div class"vocab_vocab2">
-		<div class="thumbnails go">
+		<div class="thumbnails" ref="includes/images-html/go.html">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails love">
+		<div class="thumbnails" ref="includes/images-html/love.html">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails logo">
+		<div class="thumbnails" ref="includes/images-html/logo.html">
 		<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails byu">
+		<div class="thumbnails" ref="includes/images-html/byu.html">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails beautiful">
+		<div class="thumbnails" ref="includes/images-html/beautiful.html">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails friendship">
+		<div class="thumbnails" ref="includes/images-html/friendship.html">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails strong">
+		<div class="thumbnails" ref="includes/images-html/strong.html">
 			<img src="images/strong.png" />
 		</div>
-		<div class="thumbnails truth">
+		<div class="thumbnails" ref="includes/images-html/truth.html">
 			<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails logo">
+		<div class="thumbnails" ref="includes/images-html/logo.html">
 			<img src="images/logo.png" />
 		</div>
 	</div>
 	<div class="vocab_vocab3">
-		<div class="thumbnails truth">
+		<div class="thumbnails" ref="includes/images-html/truth.html">
 		<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails logo">
+		<div class="thumbnails" ref="includes/images-html/logo.html">
 			<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails logo">
+		<div class="thumbnails" ref="includes/images-html/logo.html">
 		<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails byu">
+		<div class="thumbnails" ref="includes/images-html/byu.html">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails beautiful">
+		<div class="thumbnails" ref="includes/images-html/beautiful.html">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails friendship">
+		<div class="thumbnails" ref="includes/images-html/friendship.html">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails go">
+		<div class="thumbnails" ref="includes/images-html/go.html">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails love">
+		<div class="thumbnails" ref="includes/images-html/love.html">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails strong">
+		<div class="thumbnails" ref="includes/images-html/strong.html">
 			<img src="images/strong.png" />
 		</div>
 	</div>
