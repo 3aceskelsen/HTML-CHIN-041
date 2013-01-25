@@ -221,14 +221,24 @@ body.style2 {
 		background:url(images/backgrounds/portrait_background.png) no-repeat 0px 0px; 
 		background-size: cover;
 		}
-	#vocab_define {
+	.filler {
 		margin-top:3.5em;
 		margin-left:auto;
 		margin-right:auto;
 		width:94.872%;
 		display:block;
-		text-align:center;	
+		text-align:center;
 	}
+	#vocab_define {
+		position:fixed;
+		margin-top:3.5em;
+		margin-left:auto;
+		margin-right:auto;
+		width:94.872%;
+		display:block;
+		text-align:center;
+		
+}
 	.vocab_vocab {
 		margin-top:.5em;
 		margin-left:auto;
