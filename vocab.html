@@ -3,13 +3,30 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<title>Vocab</title>
 	<link rel="stylesheet" type="text/css" href="all.css">
+	<script type="text/javascript" src="includes/assets/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://isdev.byu.edu/is/share/HTML_Resources/JavaScript/debug.lib.js"></script>
 </head>
+<script type="text/javascript">
+	$(document).ready(function() {							//	This runs the following code when the document is finished loading
+		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on 
+			//var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");
+			var page = $(this).attr("class").split(" ")[1] + ".html"; //this refers to the thumbnail div
+			$.ajax({
+				"url":"includes/images-html/"+page, 
+				"success":function(data,textStatus,jqXHR){
+					$("#vocab_define").replaceWith(data);
+				}
+			});
+			IsLog.c("Click handler fired");
+		});
+	});
+</script>
 
 <body class="style2">
-	<div class="vocab_define">
+	<div id="vocab_define">
 		<h1>Vocabulary</h1>
 		<div class="vocab_img">
-		<img src="images/truth.png" />
+		<img src="images/logo.png" />
 		</div>
 	<div class="caption">
 		<p class="font-bold">The definition of the word</p>
@@ -17,81 +34,90 @@
 	</div>
 	</div>
 	<div class="vocab_vocab">
-		<div class="thumbnails">
+		<div class="thumbnails logo">
 			<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails byu">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails beautiful">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails friendship">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails go">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails love">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails strong">
 			<img src="images/strong.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails truth">
 			<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails">
+		<div class="thumbnails logo">
 			<img src="images/logo.png" />
 		</div>
 	<div class"vocab_vocab2">
-			<div class="thumbnails">
-				<img src="images/byu.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/beautiful.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/friendship.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/go.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/love.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/strong.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/truth.png" />
-			</div>
+		<div class="thumbnails go">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails love">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails logo">
+		<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails byu">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails beautiful">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails friendship">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails strong">
+			<img src="images/strong.png" />
+		</div>
+		<div class="thumbnails truth">
+			<img src="images/truth.png" />
+		</div>
+		<div class="thumbnails logo">
+			<img src="images/logo.png" />
+		</div>
 	</div>
 	<div class="vocab_vocab3">
-			<div class="thumbnails">
-				<img src="images/logo.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/byu.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/beautiful.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/friendship.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/go.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/love.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/strong.png" />
-			</div>
-			<div class="thumbnails">
-				<img src="images/truth.png" />
-			</div>
+		<div class="thumbnails truth">
+		<img src="images/truth.png" />
+		</div>
+		<div class="thumbnails logo">
+			<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails logo">
+		<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails byu">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails beautiful">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails friendship">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails go">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails love">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails strong">
+			<img src="images/strong.png" />
+		</div>
 	</div>
 	</div>
 	<div class="vocab_instruction">
@@ -103,7 +129,7 @@
 		<a href="contact_us.html">Contact Us</a>
 	</nav>
 	<footer><span>&copy; BYUis</span></footer>
-	<img class="logo" src="images/logo.png" />
+	<img class="logo1" src="images/logo.png" />
 	<img class="logo_symbol" src="images/byu.png" />	
 </body>
 </html>

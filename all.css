@@ -62,7 +62,7 @@ body {
 	background-size: cover;
 	margin:0;
 	}
-.logo {
+.logo1 {
 	position:absolute;
 	top: 0em;
 	left: 0em;
@@ -136,7 +136,7 @@ body.style2 {
 }
 
 	/*vocab landscape*/
-.vocab_define {
+#vocab_define {
 	display:inline-block; 
 	width: 38.031%; 
 	margin-left: 2.564%;
@@ -144,12 +144,12 @@ body.style2 {
 	margin-top: 4.5em;
 	text-align:center;
 }
-.vocab_define p.font-normal{
+#vocab_define p.font-normal{
 	font-size:1.4em;
 	font-style:italic;
 	margin-top: 0em;
 }
-.vocab_define p.font-bold{
+#vocab_define p.font-bold{
 	font-size:1.6em;
 	font-weight:bold;
 	margin-bottom: 0em;
@@ -180,7 +180,7 @@ body.style2 {
 	margin: 0em 2em 2em 0px;
 	display:inline-block;
 }
-.vocab_define .vocab_img {
+#vocab_define .vocab_img {
 	height: 9em;	
 }
 .vocab_vocab .thumbnails img {
@@ -221,7 +221,7 @@ body.style2 {
 	background:url(images/backgrounds/portrait_background.png) no-repeat 0px 0px; 
 	background-size: cover;
 	}
-.vocab_define {
+#vocab_define {
 	margin-top:4.5em;
 	margin-left:auto;
 	margin-right:auto;
