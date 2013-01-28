@@ -20,46 +20,10 @@ body {
 	}
 body h1{
 	font-size: 4em;
-	}
-
-/*.home h1 { 
-	margin: 1em 0em .8em 0em; 
-	font-weight: normal;
-	font-family: Georgia;
-	font-size: 3em;
-	color: #489602;
-	line-height: .5em;
-	}
-.home {
-	display:inline-block;
-	width: 40%;
-	padding: 4em 2em;
-	}
-.home_right {
-	display:inline-block;
-	width:40%;
-	}
-*/
-/*footer  { 
-	display: block;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	height: 60px;
-	background-color: #fff;
-	}
-footer span  {
-	position: absolute;
-	top: 18px;
-	right: 24px;
-	font-size: 12px;
-	}*/
-
-
-																	/* Global Layout */
+	}																	/* Global Layout */
 body {
-	background-attachment:fixed;
 	background:url(images/backgrounds/chinese_background.png) no-repeat 0px 0px;
+	background-attachment:fixed;
 	background-size: cover;
 	margin:0;
 	}
@@ -99,9 +63,10 @@ footer {
 	transition: all 1s ease-in-out;
 }
 	/*home landscape*/
-body.style2 {
-	background-attachment:fixed;
+body.style2 {  			/*vocab page*/
 	background:url(images/backgrounds/chinese_background2.png) no-repeat 0px 0px; 
+	background-size:100%;
+	background-attachment:fixed;
 	background-size: cover;
 }
 .home_main {
@@ -138,6 +103,46 @@ body.style2 {
 }
 
 	/*vocab landscape*/
+.filler {		/*also used for scrolling, the vocab goes on top of this so that it can stay fixed and this will fill its spot to scroll*/
+	display:inline-block; 
+	width: 38.031%; 
+	margin-left: 2.564%;
+	margin-right: 1.28%; 
+	margin-top: 4.5em;
+	text-align:center;
+}
+.filler2 {
+	background:url(images/backgrounds/chinese_background2.png) no-repeat 0px 0px;
+	background-size: 100%;
+	background-attachment: fixed;
+	background-position:length -566.666%;
+	display:block;
+	width: 100%;
+	margin-left:0%;
+	margin-right: 0%;
+	margin-top:0em;
+	margin bottom: 0%;
+	text-align:center;
+	position:fixed;
+	bottom: 0em;
+	right: 0em;
+	height:15%;
+}
+.filler3 {
+	background:url(images/backgrounds/chinese_background2.png) no-repeat 0px 0px;
+	background-size: 100%;
+	display:block;
+	width: 100%;
+	margin-left:0%;
+	margin-right: 0%;
+	margin-top:0em;
+	margin bottom: 0em;	
+	text-align:center;
+	position:fixed;
+	top:0em;
+	right: 0em;
+	height:10em;
+}
 #vocab_define p.font-normal{
 	font-size:1.4em;
 	font-style:italic;
@@ -148,33 +153,43 @@ body.style2 {
 	font-weight:bold;
 	margin-bottom: 0em;
 }	
-.filler {		/*also used for scrolling*/
-	display:inline-block; 
-	width: 38.031%; 
-	margin-left: 2.564%;
-	margin-right: 1.28%; 
-	margin-top: 4.5em;
-	text-align:center;
-}
 #vocab_define {
 	position:fixed; /* this is used for fixing scrolling*/
 	display:inline-block; 
 	width: 38.031%; 
 	margin-left: 2.564%;
 	margin-right: 1.28%; 
-	margin-top: 4.5em;
+	margin-top: 10em;
 	text-align:center;
 	left:0;
+	z-index: 100;
+}
+#vocab_define h1 {
+	height:0em;	
+	margin-top:.25em;
+	margin-bottom:0em;
+}
+#vocab_define .vocab_img{
+	height: 20em; /*changed from 9em*/	
+}
+.vocab_img h1{  /*made for current modifications with text symbols*/
+	font-size:13em;	
+}
+.vocab_vocab .thumbnails img {
+	height:5em;	
 }
 .vocab_vocab {
 	display:inline-block; 
 	width: 50.269%; 
+	height: 24em;
 	margin-left: 1.28%; 
 	margin-right: 1.28%; 
-	margin-top: 20%;
-	background-image: url(images/backgrounds/shaded-background.png);
-	background-repeat: repeat;
+	margin-top: 15%;
+	/*background-image: url(images/backgrounds/shaded-background.png);
+	background-repeat: repeat;*/
 	padding-bottom:5em;
+	/*overflow-y:hidden;
+	overflow-x:hidden;*/
 }
 .vocab_instruction {
 	position:fixed;
@@ -188,12 +203,6 @@ body.style2 {
 	display:inline-block;
 	margin: 0em 2em 2em 0px;
 	display:inline-block;
-}
-#vocab_define .vocab_img img{
-	height: 13em; /*changed from 9em*/	
-}
-.vocab_vocab .thumbnails img {
-	height:5em;	
 }
 	/*contact us landscape*/
 .contact_contact-us { 
@@ -241,37 +250,51 @@ body.style2 {
 		display:inline-block;
 		text-align:center;
 	}
-	#vocab_define {
-		position:fixed;
-		margin-top:3.5em;
-		margin-left:auto;
-		margin-right:auto;
-		width:94.872%;
-		display:inline-block;
+	.filler2 {
+		background:url() no-repeat 0px 0px; 
+		/*background-size: 100%;
+		background-position:bottom;
+		display:block;
+		width: 3em;
+		margin-left:0%;
+		margin-right: 0%;
+		margin-top:0em;
+		margin bottom: 0%;
 		text-align:center;
-		
-}
+		position:fixed;
+		bottom: 0em;
+		left: 0em;
+		height:100%;*/
+	}
+	.filler3 {
+		background:url() no-repeat 0px 0px; 
+		/*background-size: 100%;
+		display:block;
+		width: 3em;
+		margin-left:0%;
+		margin-right: 0%;
+		margin-top:0em;
+		margin bottom: 0em;	
+		text-align:center;
+		position:fixed;
+		top:0em;
+		right: 0em;
+		height:100%;*/
+	}
 	.vocab_vocab {
-		margin-top:26.5em;
+		height:14em;
+		margin-top:29.5em;
 		margin-left:auto;
 		margin-right:auto;
 		margin-bottom:3em;
 		width:94.872%;
 		display:block;
-		background-image: url(images/backgrounds/shaded-background-vertical.png);
-		background-repeat: repeat;
+		/*background-image: url(images/backgrounds/shaded-background-vertical.png);
+		background-repeat: repeat;*/
 		background-attachment:fixed;
-	/*	overflow-x:scroll;
+		/*overflow-x:scroll;
 		overflow-y:hidden;*/
 		
-	}
-	.vocab_instruction h1 {
-		font-size:1.5em;
-	}
-	.vocab_instruction {
-		position:fixed;
-		bottom: 1.8em;
-		right: 5em;
 	}
 	.vocab_vocab .thumbnails {
 		display:inline-block;
@@ -280,8 +303,31 @@ body.style2 {
 	.vocab_vocab .thumbnails img {
 		height:4em;	
 	}
-	#vocab_define .vocab_img img{
+	/*#vocab_define .vocab_img img{
 		height: 9em; 
+	}*/
+	#vocab_define {
+		position:fixed;
+		margin-top:3.5em;
+		margin-left:auto;
+		margin-right:auto;
+		width:94.872%;
+		display:inline-block;
+		text-align:center;	
+	}
+	#vocab_define .vocab_img{
+		height: 19em; /*changed from 9em*/	
+	}
+	#vocab_define h1 {
+		height: .1em;	
+	}
+	.vocab_instruction h1 {
+		font-size:1.5em;
+	}
+	.vocab_instruction {
+		position:fixed;
+		bottom: 1.8em;
+		right: 5em;
 	}
 			/*contact us portrait*/
 	.contact_contact-us { 

@@ -1,0 +1,645 @@
+[
+	{
+		"chineese-character":"零",
+		"pronunciation":"líng",
+		"translation":"zero",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"一",
+		"pronunciation":"yī",
+		"translation":"one",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"二",
+		"pronunciation":"èr",
+		"translation":"two",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"三",
+		"pronunciation":"sān",
+		"translation":"three",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"四",
+		"pronunciation":"sì",
+		"translation":"four",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"五",
+		"pronunciation":"wǔ",
+		"translation":"five",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"六",
+		"pronunciation":"liù",
+		"translation":"six",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"七",
+		"pronunciation":"qī",
+		"translation":"seven",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"八",
+		"pronunciation":"bā",
+		"translation":"eight",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"九",
+		"pronunciation":"jiǔ",
+		"translation":"nine",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"十",
+		"pronunciation":"shí",
+		"translation":"ten",
+		"lesson":"Numbers 0-10"
+	},
+	{
+		"chineese-character":"你",
+		"pronunciation":"nǐ",
+		"translation":"you",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"好",
+		"pronunciation":"hǎo",
+		"translation":"good",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"是",
+		"pronunciation":"shì",
+		"translation":"to be, (affirmative answer) yes",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"学",
+		"pronunciation":"xué",
+		"translation":"to study, to learn",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"学生",
+		"pronunciation":"xuéshēng",
+		"translation":"student",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"吗",
+		"pronunciation":"ma",
+		"translation":"? (used at the end of a declarative sentence to transform it into a question)",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"我",
+		"pronunciation":"wǒ",
+		"translation":"I, me",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"呢",
+		"pronunciation":"ne",
+		"translation":"(used at the end of an interrogative sentence)",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"也",
+		"pronunciation":"yě",
+		"translation":"also",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"他",
+		"pronunciation":"tā",
+		"translation":"he, him",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"不",
+		"pronunciation":"bù",
+		"translation":"(used to form negative) not, no",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"老师",
+		"pronunciation":"lǎoshī",
+		"translation":"teacher",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"中文",
+		"pronunciation":"Zhōngwén",
+		"translation":"Chinese (language)",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"她",
+		"pronunciation":"tā",
+		"translation":"she, her",
+		"lesson":"Lesson 1"
+	},
+	{
+		"chineese-character":"您",
+		"pronunciation":"nín",
+		"translation":"(polite) you",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"贵",
+		"pronunciation":"guì",
+		"translation":"noble, honored, expensive",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"姓",
+		"pronunciation":"xìng",
+		"translation":"surname, family name, have as a surname",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"请",
+		"pronunciation":"qǐng",
+		"translation":"(polite) please",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"问",
+		"pronunciation":"wèn",
+		"translation":"to ask",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"的",
+		"pronunciation":"de",
+		"translation":"(a structural particle used to show possession)",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"英文",
+		"pronunciation":"Yīngwén",
+		"translation":"English (language)",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"名字",
+		"pronunciation":"míngzi",
+		"translation":"name",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"叫",
+		"pronunciation":"jiào",
+		"translation":"to call, to be called",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"什么",
+		"pronunciation":"shénme",
+		"translation":"what?",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"谁",
+		"pronunciation":"shéi",
+		"translation":"who, whom?",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"同学",
+		"pronunciation":"tóngxué",
+		"translation":"classmate",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"同",
+		"pronunciation":"tóng",
+		"translation":"same, similar",
+		"lesson":"Lesson 2"
+	},
+	{
+		"chineese-character":"哪",
+		"pronunciation":"nǎ",
+		"translation":"which",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"国",
+		"pronunciation":"guó",
+		"translation":"country",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"人",
+		"pronunciation":"rén",
+		"translation":"person",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"很",
+		"pronunciation":"hěn",
+		"translation":"very, quite",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"对了",
+		"pronunciation":"duìle",
+		"translation":"by the way (a phrase used to start a new topic)",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"说",
+		"pronunciation":"shuō",
+		"translation":"to speak",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"会",
+		"pronunciation":"huì",
+		"translation":"can, be able to, know how to",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"一点儿",
+		"pronunciation":"yīdiǎr",
+		"translation":"a little",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"和",
+		"pronunciation":"hé",
+		"translation":"and",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"美国",
+		"pronunciation":"Měiguó",
+		"translation":"United States",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"英国",
+		"pronunciation":"Yīngguó",
+		"translation":"Britain",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"法国",
+		"pronunciation":"Fǎguó",
+		"translation":"France",
+		"lesson":"Lesson 3"
+	},
+	{
+		"chineese-character":"月",
+		"pronunciation":"yuè",
+		"translation":"month",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"号",
+		"pronunciation":"háo",
+		"translation":"day of a month",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"那",
+		"pronunciation":"nà",
+		"translation":"that",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"书",
+		"pronunciation":"shū",
+		"translation":"book",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"这",
+		"pronunciation":"zhè",
+		"translation":"this",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"本",
+		"pronunciation":"běn",
+		"translation":"(measure word for bound items such as books and magazines)",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"文学",
+		"pronunciation":"wénxué",
+		"translation":"literature",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"难",
+		"pronunciation":"nán",
+		"translation":"difficult",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"太",
+		"pronunciation":"tài",
+		"translation":"too",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"可是",
+		"pronunciation":"kěshì",
+		"translation":"but, yet, however",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"功课",
+		"pronunciation":"gōngkè",
+		"translation":"homework, assignment",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"多",
+		"pronunciation":"duō",
+		"translation":"many, much",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"门",
+		"pronunciation":"mén",
+		"translation":"(suffix used after a personal pronoun to show plural numbers)",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"少",
+		"pronunciation":"shǎo",
+		"translation":"few, little",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"忙",
+		"pronunciation":"máng",
+		"translation":"busy",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"累",
+		"pronunciation":"lèi",
+		"translation":"tired",
+		"lesson":"Lesson 4"
+	},
+	{
+		"chineese-character":"生日",
+		"pronunciation":"shēngrì",
+		"translation":"birthday ",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"岁",
+		"pronunciation":"suì",
+		"translation":"years of age",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"朋友",
+		"pronunciation":"péngyou",
+		"translation":"friend",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"来",
+		"pronunciation":"lái",
+		"translation":"to come (also used before a verb to indicate that one is about to do something)",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"介绍",
+		"pronunciation":"jièshào",
+		"translation":"to introduce, introduction",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"一下",
+		"pronunciation":"yīxià",
+		"translation":"(used after a verb to indicate a brief action)",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"室友",
+		"pronunciation":"shìyǒu",
+		"translation":"roommate",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"有",
+		"pronunciation":"yǒu",
+		"translation":"to have, there is/are",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"几",
+		"pronunciation":"jī",
+		"translation":"how many",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"两",
+		"pronunciation":"liǎng",
+		"translation":"two",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"个",
+		"pronunciation":"gè",
+		"translation":"(the most commonly used measure word for people, characters, things in general)",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"都",
+		"pronunciation":"dōu",
+		"translation":"all, both ",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"常",
+		"pronunciation":"cháng",
+		"translation":"often, frequently",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"跟",
+		"pronunciation":"gēn",
+		"translation":"with",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"没有",
+		"pronunciation":"méiyǒu",
+		"translation":"to not have, to be without, there isn’t/aren’t",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"女朋友",
+		"pronunciation":"nǚpéngyou",
+		"translation":"girlfriend",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"男朋友",
+		"pronunciation":"nánpéngyou",
+		"translation":"boyfriend",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"认识",
+		"pronunciation":"rènshi",
+		"translation":"to know, to recognize, to be acquainted with/familiar with",
+		"lesson":"Lesson 5"
+	},
+	{
+		"chineese-character":"家",
+		"pronunciation":"jiā",
+		"translation":"home, family",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"大家",
+		"pronunciation":"dàjiā",
+		"translation":"all, everyone",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"从",
+		"pronunciation":"cóng",
+		"translation":"from",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"在",
+		"pronunciation":"zài",
+		"translation":"to be at, to be in",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"爸爸",
+		"pronunciation":"bàba",
+		"translation":"father",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"妈妈",
+		"pronunciation":"māma",
+		"translation":"mother",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"姐姐",
+		"pronunciation":"jiějie",
+		"translation":"elder sister",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"哥哥",
+		"pronunciation":"gēge",
+		"translation":"elder brother",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"妹妹",
+		"pronunciation":"mèimei",
+		"translation":"younger sister",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"弟弟",
+		"pronunciation":"dìdi",
+		"translation":"younger brother",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"兄弟姐妹",
+		"pronunciation":"xiōngdìjiěmèi",
+		"translation":"siblings",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"工作",
+		"pronunciation":"gōngzuò",
+		"translation":"work",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"辆",
+		"pronunciation":"liàng",
+		"translation":"(measure word for vehicles)",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"车",
+		"pronunciation":"chē",
+		"translation":"car",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"只",
+		"pronunciation":"zhī",
+		"translation":"(measure word for certain animals, or for one of a pair)",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"狗",
+		"pronunciation":"gǒu",
+		"translation":"dog",
+		"lesson":"Lesson 6"
+	},
+	{
+		"chineese-character":"住",
+		"pronunciation":"zhù",
+		"translation":"to live",
+		"lesson":"Lesson 7"
+	},
+	{
+		"chineese-character":"哪儿",
+		"pronunciation":"nǎ ér",
+		"translation":"where?",
+		"lesson":"Lesson 7"
+	},
+	{
+		"chineese-character":"号码",
+		"pronunciation":"hàomǎ",
+		"translation":"number",
+		"lesson":"Lesson 7"
+	},
+	{
+		"chineese-character":"电话",
+		"pronunciation":"diànhuà",
+		"translation":"phone",
+		"lesson":"Lesson 7"
+	},
+	{
+		"chineese-character":"手机",
+		"pronunciation":"shǒujī",
+		"translation":"cell phone",
+		"lesson":"Lesson 7"
+	},
+	{
+		"chineese-character":"大",
+		"pronunciation":"dà",
+		"translation":"big",
+		"lesson":"Lesson 7"
+	},
+	{
+		"chineese-character":"小",
+		"pronunciation":"xiǎo",
+		"translation":"small",
+		"lesson":"Lesson 7"
+	}
+]
+	

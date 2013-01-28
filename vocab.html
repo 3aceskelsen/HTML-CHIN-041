@@ -9,19 +9,25 @@
 </head>
 <script type="text/javascript">
 	$(document).ready(function() {							//	This runs the following code when the document is finished loading
-	
+		var characters;
+		$.getJSON("includes/assets/characters.json", function(json){
+			characters = json;
+			IsLog.c(characters);
+		});
 		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on click calls the function
 			/*var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");*/
 // below a var is created called page, then jQuery funs .click because of the this, then finds the attr class within the .thumbnails 
 	//and splits it into two and we take the second [1] and and html behind it.
 			var page = $(this).attr("ref"); //this refers to the thumbnail div
+			/*
 			$.ajax({
 				"url":""+page, //adding var page here, which essentially adds the second class name + .html
 				"success":function(data,textStatus,jqXHR){ //after it has successfully loaded var page it will replace the #vocab_define with the data (from other html)
 					$("#vocab_define").replaceWith(data);
 				}
 			});
-			IsLog.c("Click handler fired");
+			*/
+			IsLog.c("Click handler fired"); // problem solving
 		});
 	});
 </script>
@@ -33,96 +39,121 @@
 	<div id="vocab_define">
 		<h1>Vocabulary</h1>
 		<div class="vocab_img">
-		<img src="images/logo.png" />
+			<!--<img src="images/logo.png" />-->
+			<h1>零</h1>
 		</div>
-	<div class="caption">
-		<p class="font-bold">The definition of the word</p>
-		<p class="font-normal">an example of the word being used goes here!</p>
+		<div class="caption">
+			<p class="font-bold">líng<!--The definition of the word--></p>
+			<p class="font-normal">Zero<!--an example of the word being used goes here!--></p>
+		</div>
 	</div>
+	<div class="filler2">
+	&nbsp;
+	</div>
+	<div class="filler3">
+	&nbsp;
 	</div>
 	<div class="vocab_vocab">
-		<div class="thumbnails" ref="includes/images-html/logo.html">
+		<div class="thumbnails" ref="includes/images-html/zero.html">
 			<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/byu.html">
+		<div class="thumbnails" ref="includes/images-html/one.html">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/beautiful.html">
+		<div class="thumbnails" ref="includes/images-html/two.html">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/friendship.html">
+		<div class="thumbnails" ref="includes/images-html/three.html">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/go.html">
+		<div class="thumbnails" ref="includes/images-html/four.html">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/love.html">
+		<div class="thumbnails" ref="includes/images-html/five.html">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/strong.html">
+		<div class="thumbnails" ref="includes/images-html/six.html">
 			<img src="images/strong.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/truth.html">
+		<div class="thumbnails" ref="includes/images-html/seven.html">
 			<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/logo.html">
+		<div class="thumbnails" ref="includes/images-html/eight.html">
 			<img src="images/logo.png" />
 		</div>
 	<div class"vocab_vocab2">
-		<div class="thumbnails" ref="includes/images-html/go.html">
+		<div class="thumbnails" ref="includes/images-html/nine.html">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/love.html">
+		<div class="thumbnails" ref="includes/images-html/ten.html">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/logo.html">
+		<div class="thumbnails" ref="includes/images-html/also.html">
 		<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/byu.html">
+		<div class="thumbnails" ref="includes/images-html/chinese.html">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/beautiful.html">
+		<div class="thumbnails" ref="includes/images-html/ending.html">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/friendship.html">
+		<div class="thumbnails" ref="includes/images-html/good.html">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/strong.html">
+		<div class="thumbnails" ref="includes/images-html/him.html">
 			<img src="images/strong.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/truth.html">
+		<div class="thumbnails" ref="includes/images-html/me.html">
 			<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/logo.html">
+		<div class="thumbnails" ref="includes/images-html/no.html">
 			<img src="images/logo.png" />
 		</div>
 	</div>
 	<div class="vocab_vocab3">
-		<div class="thumbnails" ref="includes/images-html/truth.html">
+		<div class="thumbnails" ref="includes/images-html/question-mark.html">
 		<img src="images/truth.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/logo.html">
+		<div class="thumbnails" ref="includes/images-html/she.html">
 			<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/logo.html">
+		<div class="thumbnails" ref="includes/images-html/student.html">
 		<img src="images/logo.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/byu.html">
+		<div class="thumbnails" ref="includes/images-html/teacher.html">
 			<img src="images/byu.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/beautiful.html">
+		<div class="thumbnails" ref="includes/images-html/to-be.html">
 			<img src="images/beautiful.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/friendship.html">
+		<div class="thumbnails" ref="includes/images-html/to-study.html">
 			<img src="images/friendship.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/go.html">
+		<div class="thumbnails" ref="includes/images-html/you.html">
 			<img src="images/go.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/love.html">
+		<div class="thumbnails" ref="includes/images-html/polite.html">
 			<img src="images/love.png" />
 		</div>
-		<div class="thumbnails" ref="includes/images-html/strong.html">
+		<div class="thumbnails" ref="includes/images-html/noble.html">
+			<img src="images/strong.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/surname.html">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/please.html">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/to-ask.html">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/possession.html">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/english.html">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/name.html">
 			<img src="images/strong.png" />
 		</div>
 	</div>
