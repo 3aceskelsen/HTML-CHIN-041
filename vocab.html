@@ -2,7 +2,9 @@
 <head>
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<title>Vocab</title>
+	<link type="text/css" rel="apple-touch-icon-precomposed" href="images/chinese-app-icon.png" />
 	<link rel="stylesheet" type="text/css" href="all.css">
 	<script type="text/javascript" src="includes/assets/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="http://isdev.byu.edu/is/share/HTML_Resources/JavaScript/debug.lib.js"></script>
@@ -46,7 +48,7 @@
 		}
 		});
 		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on click calls the function
-			/*var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");*/
+			//var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");
 // below a var is created called page, then jQuery funs .click because of the this, then finds the attr class within the .thumbnails 
 	//and splits it into two and we take the second [1] and and html behind it.
 			var page = $(this).attr("ref"); //this refers to the thumbnail div
@@ -85,7 +87,7 @@
 	<div class="filler3">
 	&nbsp;
 	</div>
-	<div class="vocab_vocab" id="character-list">	
+	<div class="vocab_vocab" id="character-list">
 	</div>
 	<div class="vocab_instruction">
 	<h1>Click on the symbol to see its meaning</h1>
