@@ -202,15 +202,6 @@ body.style2 {  			/*vocab page*/
 	writing-mode: vertical-lr;*/
 	
 }
-.vocab_instruction {
-	position:fixed;
-	bottom: 3em;
-	right: 4em;
-}
-.vocab_instruction h1 {
-	font-size:2em;
-	text-shadow: 0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff;
-}
 .vocab_vocab .thumbnails {
 	display:inline-block;
 	margin: 0em 0em 0em 0px;
@@ -226,6 +217,15 @@ body.style2 {  			/*vocab page*/
 	font-size: 4.5em;
 	margin: 0em;
 	padding: 0em;
+}
+.vocab_instruction {
+	position:fixed;
+	bottom: 3em;
+	right: 4em;
+}
+.vocab_instruction h1 {
+	font-size:2em;
+	text-shadow: 0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff;
 }
 	/*contact us landscape*/
 .contact_contact-us { 
@@ -314,11 +314,7 @@ body.style2 {  			/*vocab page*/
 		display:block;
 		max-width: 150% !important;
 		min-width: 100%;
-		/*background-image: url(images/backgrounds/shaded-background-vertical.png);
-		background-repeat: repeat;*/
 		background-attachment:fixed;
-		/*overflow-x:scroll;
-		overflow-y:hidden;*/
 		text-wrap: unrestricted;
 	}
 	.vocab_vocab .thumbnails {
