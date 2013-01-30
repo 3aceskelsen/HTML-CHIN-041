@@ -12,53 +12,21 @@
 		var characters;
 		$.getJSON("includes/assets/characters.json", function(json){
 			characters = json;
-			var targetHolder = $("#character-list");
-			targetHolder.html("");
-			for(var objNumber in characters) {
-				var newDiv = $("<div></div>");
-				newDiv.attr("class", "thumbnails");
-				newDiv.attr("character-index", objNumber);
-				var newH3 = $("<h3>"+characters[objNumber]["chinese-character"]+"</h3>");
-				newDiv.append(newH3);
-				targetHolder.append(newDiv);
-				//	targetHolder.append(document.createTextNode(" "));
-				IsLog.c(characters[objNumber]);
-				newDiv.click(function(){
-					var selectedCharacterIndex = $(this).attr("character-index");
-					
-					$("#lesson-title").html(characters[selectedCharacterIndex]["lesson"]);
-					$("#chinese-character").html(characters[selectedCharacterIndex]["chinese-character"]);
-					if(characters[selectedCharacterIndex]["chinese-character"].length > 4) {
-						$("#chinese-character").css("font-size", "5em");
-					} else if(characters[selectedCharacterIndex]["chinese-character"].length > 3) {
-						$("#chinese-character").css("font-size", "6em");
-					} else if(characters[selectedCharacterIndex]["chinese-character"].length > 2) {
-						$("#chinese-character").css("font-size", "8em");
-					} else {
-						$("#chinese-character").css("font-size", "auto");
-					}
-					$("#pronunciation").html(characters[selectedCharacterIndex]["pronunciation"]);
-					$("#translation").html(characters[selectedCharacterIndex]["translation"]);
-					
-					IsLog.c("Click handler fired"); // problem solving
-					
-				});
-		}
+			IsLog.c(characters);
 		});
 		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on click calls the function
 			/*var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");*/
 // below a var is created called page, then jQuery funs .click because of the this, then finds the attr class within the .thumbnails 
 	//and splits it into two and we take the second [1] and and html behind it.
 			var page = $(this).attr("ref"); //this refers to the thumbnail div
-			
-			//	here we determine which character they clicked...
-			var selectedCharacterIndex = $(this).attr("character-index");
-			
-			$("#lesson-title").html(characters[selectedCharacterIndex]["lesson"]);
-			$("#chinese-character").html(characters[selectedCharacterIndex]["chinese-character"]);
-			$("#pronunciation").html(characters[selectedCharacterIndex]["pronunciation"]);
-			$("#translation").html(characters[selectedCharacterIndex]["translation"]);
-			
+			/*
+			$.ajax({
+				"url":""+page, //adding var page here, which essentially adds the second class name + .html
+				"success":function(data,textStatus,jqXHR){ //after it has successfully loaded var page it will replace the #vocab_define with the data (from other html)
+					$("#vocab_define").replaceWith(data);
+				}
+			});
+			*/
 			IsLog.c("Click handler fired"); // problem solving
 		});
 	});
@@ -69,14 +37,14 @@
 	&nbsp;
 	</div>
 	<div id="vocab_define">
-		<h1 id="lesson-title">Vocabulary</h1>
+		<h1>Vocabulary</h1>
 		<div class="vocab_img">
 			<!--<img src="images/logo.png" />-->
-			<h1 id="chinese-character">零</h1>
+			<h1>零</h1>
 		</div>
 		<div class="caption">
-			<p class="font-bold" id="pronunciation">líng<!--The definition of the word--></p>
-			<p class="font-normal" id="translation">Zero<!--an example of the word being used goes here!--></p>
+			<p class="font-bold">líng<!--The definition of the word--></p>
+			<p class="font-normal">Zero<!--an example of the word being used goes here!--></p>
 		</div>
 	</div>
 	<div class="filler2">
@@ -85,7 +53,110 @@
 	<div class="filler3">
 	&nbsp;
 	</div>
-	<div class="vocab_vocab" id="character-list">	
+	<div class="vocab_vocab">
+		<div class="thumbnails" ref="includes/images-html/zero.html">
+			<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/one.html">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/two.html">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/three.html">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/four.html">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/five.html">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/six.html">
+			<img src="images/strong.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/seven.html">
+			<img src="images/truth.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/eight.html">
+			<img src="images/logo.png" />
+		</div>
+	<div class"vocab_vocab2">
+		<div class="thumbnails" ref="includes/images-html/nine.html">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/ten.html">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/also.html">
+		<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/chinese.html">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/ending.html">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/good.html">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/him.html">
+			<img src="images/strong.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/me.html">
+			<img src="images/truth.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/no.html">
+			<img src="images/logo.png" />
+		</div>
+	</div>
+	<div class="vocab_vocab3">
+		<div class="thumbnails" ref="includes/images-html/question-mark.html">
+		<img src="images/truth.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/she.html">
+			<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/student.html">
+		<img src="images/logo.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/teacher.html">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/to-be.html">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/to-study.html">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/you.html">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/polite.html">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/noble.html">
+			<img src="images/strong.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/surname.html">
+			<img src="images/byu.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/please.html">
+			<img src="images/beautiful.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/to-ask.html">
+			<img src="images/friendship.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/possession.html">
+			<img src="images/go.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/english.html">
+			<img src="images/love.png" />
+		</div>
+		<div class="thumbnails" ref="includes/images-html/name.html">
+			<img src="images/strong.png" />
+		</div>
+	</div>
 	</div>
 	<div class="vocab_instruction">
 	<h1>Click on the symbol to see its meaning</h1>

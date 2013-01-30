@@ -64,11 +64,10 @@ footer {
 }
 	/*home landscape*/
 body.style2 {  			/*vocab page*/
-	background-image: url(images/backgrounds/chinese_background2.png); 
-	background-size: percentage 100% auto;
-	background-attachment: fixed;
+	background:url(images/backgrounds/chinese_background2.png) no-repeat 0px 0px; 
+	background-size:100%;
+	background-attachment:fixed;
 	background-size: cover;
-	background-position: top;
 }
 .home_main {
 	margin-left: 2.564%;
@@ -166,24 +165,18 @@ body.style2 {  			/*vocab page*/
 	z-index: 100;
 }
 #vocab_define h1 {
-	/*height:0em;	*/
-	margin-top: 0em;
-	margin-bottom: 0em;
-	font-size: 3em;
-}
-#vocab_define #chinese-character {
-	font-size: 5em;
+	height:0em;	
+	margin-top:.25em;
+	margin-bottom:0em;
 }
 #vocab_define .vocab_img{
-	/*height: 20em;*/ /*changed from 9em*/	
+	height: 20em; /*changed from 9em*/	
 }
 .vocab_img h1{  /*made for current modifications with text symbols*/
 	font-size:13em;	
 }
 .vocab_vocab .thumbnails img {
-	height:5em;
-	margin-top: 0em;
-	margin-bottom: 0em;
+	height:5em;	
 }
 .vocab_vocab {
 	display:inline-block; 
@@ -197,26 +190,6 @@ body.style2 {  			/*vocab page*/
 	padding-bottom:5em;
 	/*overflow-y:hidden;
 	overflow-x:hidden;*/
-	
-	/*text-orientation: upright;
-	writing-mode: vertical-lr;*/
-	
-}
-.vocab_vocab .thumbnails {
-	display:inline-block;
-	margin: 0em 0em 0em 0px;
-	min-width:  14.3965%;
-	/*max-width:  43.1895%;*/
-}
-.vocab_vocab .thumbnails:nth-child(even) {
-	background-image: url(images/backgrounds/shaded-background.png);
-}
-.vocab_vocab .thumbnails h3 {
-	/*text-orientation: upright;
-	writing-mode: vertical-lr;*/
-	font-size: 4.5em;
-	margin: 0em;
-	padding: 0em;
 }
 .vocab_instruction {
 	position:fixed;
@@ -225,7 +198,11 @@ body.style2 {  			/*vocab page*/
 }
 .vocab_instruction h1 {
 	font-size:2em;
-	text-shadow: 0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff;
+}
+.vocab_vocab .thumbnails {
+	display:inline-block;
+	margin: 0em 2em 2em 0px;
+	display:inline-block;
 }
 	/*contact us landscape*/
 .contact_contact-us { 
@@ -274,7 +251,7 @@ body.style2 {  			/*vocab page*/
 		text-align:center;
 	}
 	.filler2 {
-		background:url("") no-repeat 0px 0px; 
+		background:url() no-repeat 0px 0px; 
 		/*background-size: 100%;
 		background-position:bottom;
 		display:block;
@@ -306,21 +283,22 @@ body.style2 {  			/*vocab page*/
 	}
 	.vocab_vocab {
 		height:14em;
-		margin-top: 25.5em;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: 0em;
-		width:94.872%;
+		margin-top:29.5em;
+		margin-left:auto;
+		margin-right:auto;
+		margin-bottom:3em;
+		width:50.872%;
 		display:block;
-		max-width: 150% !important;
-		min-width: 100%;
+		/*background-image: url(images/backgrounds/shaded-background-vertical.png);
+		background-repeat: repeat;*/
 		background-attachment:fixed;
-		text-wrap: unrestricted;
+		/*overflow-x:scroll;
+		overflow-y:hidden;*/
+		
 	}
 	.vocab_vocab .thumbnails {
 		display:inline-block;
 		margin: 0em 2em 2em 0em;
-		text-wrap:suppress;
 	}
 	.vocab_vocab .thumbnails img {
 		height:4em;	
@@ -338,13 +316,13 @@ body.style2 {  			/*vocab page*/
 		text-align:center;	
 	}
 	#vocab_define .vocab_img{
-		/*height: 0em;*/
+		height: 19em; /*changed from 9em*/	
 	}
 	#vocab_define h1 {
-		/*height: .1em;*/	
+		height: .1em;	
 	}
 	.vocab_instruction h1 {
-		/*font-size:1.5em;*/
+		font-size:1.5em;
 	}
 	.vocab_instruction {
 		position:fixed;
