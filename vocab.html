@@ -30,12 +30,12 @@
 					
 					$("#lesson-title").html(characters[selectedCharacterIndex]["lesson"]);
 					$("#chinese-character").html(characters[selectedCharacterIndex]["chinese-character"]);
-					if(characters[selectedCharacterIndex]["chinese-character"].length > 4) {
+					if(characters[selectedCharacterIndex]["chinese-character"].length >= 4) {
 						$("#chinese-character").css("font-size", "5em");
-					} else if(characters[selectedCharacterIndex]["chinese-character"].length > 3) {
+					} else if(characters[selectedCharacterIndex]["chinese-character"].length >= 3) {
 						$("#chinese-character").css("font-size", "6em");
-					} else if(characters[selectedCharacterIndex]["chinese-character"].length > 2) {
-						$("#chinese-character").css("font-size", "8em");
+					} else if(characters[selectedCharacterIndex]["chinese-character"].length >= 2) {
+						$("#chinese-character").css("font-size", "7em");
 					} else {
 						$("#chinese-character").css("font-size", "auto");
 					}
@@ -73,7 +73,6 @@
 	<div id="vocab_define">
 		<h1 id="lesson-title">Vocabulary</h1>
 		<div class="vocab_img">
-			<!--<img src="images/logo.png" />-->
 			<h1 id="chinese-character">零</h1>
 		</div>
 		<div class="caption">

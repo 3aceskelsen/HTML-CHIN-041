@@ -170,10 +170,7 @@ body.style2 {  			/*vocab page*/
 	font-size: 3em;
 }
 #vocab_define #chinese-character {
-	font-size: 5em;
-}
-#vocab_define .vocab_img{
-	/*height: 20em;*/ /*changed from 9em*/	
+	font-size: 8em;
 }
 .vocab_img h1{  /*made for current modifications with text symbols*/
 	font-size:13em;	
@@ -207,6 +204,9 @@ body.style2 {  			/*vocab page*/
 	font-size: 4.5em;
 	margin: 0em;
 	padding: 0em;
+	border-style: solid;	
+	border-width: thin;
+	border-color: #2bcd11;
 }
 .vocab_instruction {
 	position:fixed;
@@ -296,22 +296,22 @@ body.style2 {  			/*vocab page*/
 	}
 	.vocab_vocab {
 		height:14em;
-		margin-top: 25.5em;
+		margin-top: 18em;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 0em;
-		width:94.872%;
-		display:block;
-		max-width: 150%;
-		min-width: 100%;
+		margin-bottom: 15%;
+		width: 620%;	/*	94.872%	*/
+		display: block;
 		background-attachment:fixed;
-		word-wrap: break-word;
+		/*max-width: 150%;*/
+		min-width: 100%;		
 	}
 	.vocab_vocab .thumbnails {
 		display:inline-block;
-		margin: 0em 2em 2em 0em;
+		margin: 0em 1em 1em 0em;
 		/*text-wrap:suppress;*/
-		word-wrap: break-word;
+		float: left;
+		min-width: 1em;
 	}
 	.vocab_vocab .thumbnails img {
 		height:4em;	
@@ -324,14 +324,28 @@ body.style2 {  			/*vocab page*/
 		margin-top:3.5em;
 		margin-left:auto;
 		margin-right:auto;
-		width:94.872%;
+		width:100%;
 		display:inline-block;
 		text-align:center;	
 	}
-	#vocab_define .vocab_img{
-		/*height: 0em;*/
+	#lesson-title {
+		display: block;
+		width: 40%;	
+		float: left;
 	}
-	#vocab_define h1 {
+	.vocab_img {
+		display: inline-block;
+		width: 40%;	
+		float: left;
+		clear: left;
+	}
+	.caption {
+		float: right;	
+		width: 60%;
+		right: 0em;
+		white-space: pre-line;
+	}
+		#vocab_define h1 {
 		/*height: .1em;*/	
 	}
 	.vocab_instruction h1 {
