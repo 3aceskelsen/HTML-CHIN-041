@@ -184,17 +184,16 @@ body.style2 {  			/*vocab page*/
 .vocab_vocab {
 	display:inline-block; 
 	width: 50.269%; 
-	height: 24em;
+	/*height: 24em;*/
 	margin-left: 41.875%; 
 	margin-right: 1.28%; 
 	margin-top: 15%;
-	padding-bottom:5em;
+	padding-bottom: 10em;
 }
 .vocab_vocab .thumbnails {
 	display:inline-block;
 	margin: 0em 0em 2px 0px;
 	min-width:  14.3965%;
-	/*max-width:  43.1895%;*/
 	border-style: solid;	
 	border-width: thin;
 	border-color: transparent;
