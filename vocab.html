@@ -7,10 +7,14 @@
 	<link type="text/css" rel="apple-touch-icon-precomposed" href="images/chinese-app-icon.png" />
 	<link rel="stylesheet" type="text/css" href="all.css">
 	<script type="text/javascript" src="includes/assets/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="includes/assets/jquery.stayInWebApp.min.js"></script>
 	<script type="text/javascript" src="http://isdev.byu.edu/is/share/HTML_Resources/JavaScript/debug.lib.js"></script>
 </head>
 <script type="text/javascript">
 	$(document).ready(function() {							//	This runs the following code when the document is finished loading
+	$(function() {
+    $.stayInWebApp();
+});
 		var characters;
 		$.getJSON("includes/assets/characters.json", function(json){
 			characters = json;
@@ -24,8 +28,8 @@
 				newDiv.append(newH3);
 				targetHolder.append(newDiv);
 				//	targetHolder.append(document.createTextNode(" "));
-				IsLog.c(characters[objNumber]);
-				newDiv.click(function(){
+				//IsLog.c(characters[objNumber]);
+				newDiv.bind("click touch touchstart", function(){
 					var selectedCharacterIndex = $(this).attr("character-index");
 					
 					$("#lesson-title").html(characters[selectedCharacterIndex]["lesson"]);
@@ -42,26 +46,16 @@
 					$("#pronunciation").html(characters[selectedCharacterIndex]["pronunciation"]);
 					$("#translation").html(characters[selectedCharacterIndex]["translation"]);
 					
+					$(".click_background").removeClass("click_background");
+					$(this).addClass("click_background");
+					IsLog.c("this: "+this);
+					IsLog.c("$(this): "+$(this));
+					IsLog.c("this class: "+$(this).attr("class"));
+					IsLog.c("Click handler fired"); // problem solving
 					IsLog.c("Click handler fired"); // problem solving
 					
 				});
 		}
-		});
-		$(".thumbnails").click(function(){		//jQuery is calling .thumbnails and then on click calls the function
-			//var page = $($(this).find("img")[0]).attr("src").replace(/^.*\/(\w+)\.\w+$/i,"$1.html");
-// below a var is created called page, then jQuery funs .click because of the this, then finds the attr class within the .thumbnails 
-	//and splits it into two and we take the second [1] and and html behind it.
-			var page = $(this).attr("ref"); //this refers to the thumbnail div
-			
-			//	here we determine which character they clicked...
-			var selectedCharacterIndex = $(this).attr("character-index");
-			
-			$("#lesson-title").html(characters[selectedCharacterIndex]["lesson"]);
-			$("#chinese-character").html(characters[selectedCharacterIndex]["chinese-character"]);
-			$("#pronunciation").html(characters[selectedCharacterIndex]["pronunciation"]);
-			$("#translation").html(characters[selectedCharacterIndex]["translation"]);
-			
-			IsLog.c("Click handler fired"); // problem solving
 		});
 	});
 </script>

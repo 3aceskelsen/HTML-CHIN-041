@@ -3,11 +3,21 @@
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;"/>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<title>Contact Us</title>
 	<link type="text/css" rel="apple-touch-icon-precomposed" href="images/chinese-app-icon.png" />
 	<link rel="stylesheet" type="text/css" href="all.css">
 	<script type="text/javascript" src="includes/assets/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="includes/assets/jquery.stayInWebApp.min.js"></script>
+	<script type="text/javascript" src="http://isdev.byu.edu/is/share/HTML_Resources/JavaScript/debug.lib.js"></script>
 </head>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$(function() {
+		$.stayInWebApp();
+		});
+	});
+</script>
 <body>
 	<div class="contact_contact-us">
 		<h1>Contact Us</h1>

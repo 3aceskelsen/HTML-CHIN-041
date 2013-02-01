@@ -14,7 +14,6 @@ a:hover {
 a:active {
 	color:#696;
 	}
-
 body {
 	font-family:noteworthy;
 	}
@@ -22,7 +21,8 @@ body h1{
 	font-size: 4em;
 	}																	/* Global Layout */
 body {
-	background:url(images/backgrounds/chinese_background.png) no-repeat 0px 0px;
+	background-image: url(images/backgrounds/chinese_background.png);
+	background-position: top left;
 	background-attachment:fixed;
 	background-size: cover;
 	margin:0;
@@ -47,11 +47,10 @@ nav {
 	bottom: 3em;
 	left: 2em;
 	}
-/*nav a {
-	background: url(images/go.png) no-repeat;
+nav a {
 	padding: 0em 1em 0em 0em;
-	}*/
-
+	font-size: 1.3em;
+}
 footer {
 	position: fixed;
 	bottom: 2em;
@@ -97,22 +96,23 @@ footer {
 }
 body.style2 {  			/*vocab page*/
 	background-image: url(images/backgrounds/vertical_background.png); 
-	background-size: percentage 100% auto;
+	background-size: auto;
+	background-position: top left;
 	background-attachment: fixed;
-	background-position: top;
 }
 	/*vocab landscape*/
-.filler {		/*also used for scrolling, the vocab goes on top of this so that it can stay fixed and this will fill its spot to scroll*/
-	display:inline-block; 
+/*.filler {
+	display:inline-block; or none
 	width: 38.031%; 
 	margin-left: 2.564%;
 	margin-right: 1.28%; 
 	margin-top: 4.5em;
 	text-align:center;
-}
+}*/
 .filler2 {
-	background:url(images/backgrounds/vertical_background.png) no-repeat 0px 0px;
-	background-size: 100%;
+	background-image:url(images/backgrounds/vertical_background.png);
+	/*background-size: 100%;*/
+	background-position: top left;
 	background-attachment: fixed;
 	/*background-position:length -566.666%;*/
 	display:block;
@@ -128,8 +128,9 @@ body.style2 {  			/*vocab page*/
 	height:15%;
 }
 .filler3 {
-	background:url(images/backgrounds/vertical_background.png) no-repeat 0px 0px;
-	background-size: 100%;
+	background-image: url(images/backgrounds/vertical_background.png);
+	/*background-size: 100%;*/
+	background-position: top left;
 	display:block;
 	width: 100%;
 	margin-left:0%;
@@ -184,16 +185,22 @@ body.style2 {  			/*vocab page*/
 	display:inline-block; 
 	width: 50.269%; 
 	height: 24em;
-	margin-left: 1.28%; 
+	margin-left: 41.875%; 
 	margin-right: 1.28%; 
 	margin-top: 15%;
 	padding-bottom:5em;
 }
 .vocab_vocab .thumbnails {
 	display:inline-block;
-	margin: 0em 0em 0em 0px;
+	margin: 0em 0em 2px 0px;
 	min-width:  14.3965%;
 	/*max-width:  43.1895%;*/
+	border-style: solid;	
+	border-width: thin;
+	border-color: transparent;
+}
+.click_background{
+	background-image: url(images/backgrounds/click-background.png) !important;
 }
 .vocab_vocab .thumbnails:nth-child(even) {
 	background-image: url(images/backgrounds/shaded-background.png);
@@ -204,9 +211,6 @@ body.style2 {  			/*vocab page*/
 	font-size: 4.5em;
 	margin: 0em;
 	padding: 0em;
-	border-style: solid;	
-	border-width: thin;
-	border-color: #2bcd11;
 }
 .vocab_instruction {
 	position:fixed;
@@ -234,7 +238,8 @@ body.style2 {  			/*vocab page*/
 @media screen and (max-width: 768px) {
 		/* Global Layout */
 	body {
-		background:url(images/backgrounds/portrait_background2.png) no-repeat 0px 0px;
+		background-image: url(images/backgrounds/portrait_background2.png);
+		background-position: top left;
 		background-size: cover;
 		background-attachment:fixed;
 		margin:0;
@@ -250,7 +255,8 @@ body.style2 {  			/*vocab page*/
 	
 			/*vocab portrait*/
 	body.style2 {
-		background:url(images/backgrounds/horizontal_background.png) no-repeat 0px 0px; 
+		background-image: url(images/backgrounds/horizontal_background.png); 
+		background-position: top left;
 		background-size: 100%;
 		background-attachment:fixed;
 		}
@@ -264,9 +270,9 @@ body.style2 {  			/*vocab page*/
 		text-align:center;
 	}
 	.filler2 {
-		background:url(images/backgrounds/horizontal_background.png) no-repeat 0px 0px; 
-		background-size: 100%;
-		background-position:bottom;
+		background-image: url(images/backgrounds/horizontal_background.png); 
+		/*background-size: 100%;*/
+		background-position: bottom left;
 		/*display:block;
 		width: 3em;
 		margin-left:0%;
@@ -280,8 +286,9 @@ body.style2 {  			/*vocab page*/
 		height:100%;*/
 	}
 	.filler3 {
-		background:url(images/backgrounds/horizontal_background.png) no-repeat 0px 0px; 
-		background-size: 100%;
+		background-image: url(images/backgrounds/horizontal_background.png);
+		background-position: top left;
+		/*background-size: 100%;*/
 		/*display:block;
 		width: 3em;
 		margin-left:0%;
