@@ -3,16 +3,16 @@
 
 																	/* Global Styles */
 a:link {
-	color:#639;
+	color:#FF0;
 	}
 a:visited {
-	color:#606;
+	color:#6C3;
 	}
 a:hover {
-	color:#603;
+	color:#39F;
 	}   /* mouse over link */
 a:active {
-	color:#696;
+	color:#33C;
 	}
 body {
 	font-family:noteworthy;
@@ -21,7 +21,7 @@ body h1{
 	font-size: 4em;
 	}																	/* Global Layout */
 body {
-	background-image: url(images/backgrounds/chinese_background.png);
+	background-image: url(images/backgrounds/chinese_background.png);	/*Background for all pages but vocab in landscape*/
 	background-position: top left;
 	background-attachment:fixed;
 	background-size: cover;
@@ -39,9 +39,8 @@ body {
 	right: 0em;
 	height: 5em;
 	opacity:0.5;
-	filter:alpha(opacity=40);
-	} /*filter is for older internet explorer*/
-
+	filter:alpha(opacity=40);		/*filter is for older internet explorer*/
+	} 
 nav { 
 	position: fixed;
 	bottom: 3em;
@@ -57,7 +56,7 @@ footer {
 	right:1em;
 	}
 															/* Page-specific Layout/style Landscape*/
-.beautiful1, .friendship1, .truth1, .wisdom1 {
+.beautiful1, .friendship1, .truth1, .wisdom1 {		/*Allows for transitions on homepage symbols between portrait and landscape*/
 	-webkit-transition: all 1s ease-in-out;
 	transition: all 1s ease-in-out;
 }
@@ -101,20 +100,10 @@ body.style2 {  			/*vocab page*/
 	background-attachment: fixed;
 }
 	/*vocab landscape*/
-/*.filler {
-	display:inline-block; or none
-	width: 38.031%; 
-	margin-left: 2.564%;
-	margin-right: 1.28%; 
-	margin-top: 4.5em;
-	text-align:center;
-}*/
-.filler2 {
+.filler2 {		/*Fillers used to hide scrolling in unwanted areas (top and bottom of page)*/
 	background-image:url(images/backgrounds/vertical_background.png);
-	/*background-size: 100%;*/
 	background-position: top left;
 	background-attachment: fixed;
-	/*background-position:length -566.666%;*/
 	display:block;
 	width: 100%;
 	margin-left:0%;
@@ -129,7 +118,6 @@ body.style2 {  			/*vocab page*/
 }
 .filler3 {
 	background-image: url(images/backgrounds/vertical_background.png);
-	/*background-size: 100%;*/
 	background-position: top left;
 	display:block;
 	width: 100%;
@@ -181,10 +169,9 @@ body.style2 {  			/*vocab page*/
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
-.vocab_vocab {
+.vocab_vocab {		/*List of vocabulary terms*/
 	display:inline-block; 
 	width: 50.269%; 
-	/*height: 24em;*/
 	margin-left: 41.875%; 
 	margin-right: 1.28%; 
 	margin-top: 15%;
@@ -198,15 +185,13 @@ body.style2 {  			/*vocab page*/
 	border-width: thin;
 	border-color: transparent;
 }
-.click_background{
+.click_background{		/*Element created in Javascript that changes color when clicked*/
 	background-image: url(images/backgrounds/click-background.png) !important;
 }
 .vocab_vocab .thumbnails:nth-child(even) {
 	background-image: url(images/backgrounds/shaded-background.png);
 }
 .vocab_vocab .thumbnails h3 {
-	/*text-orientation: upright;
-	writing-mode: vertical-lr;*/
 	font-size: 4.5em;
 	margin: 0em;
 	padding: 0em;
@@ -234,7 +219,7 @@ body.style2 {  			/*vocab page*/
 	font-size: 1.5em;
 }
 															/* Page-specific Layout Portrait*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {		/*for iPad Portrait mode*/
 		/* Global Layout */
 	body {
 		background-image: url(images/backgrounds/portrait_background2.png);
@@ -251,7 +236,27 @@ body.style2 {  			/*vocab page*/
 	.home_main_content {
 		margint-left: 20.635%;
 	}
-	
+	/*Positions images for portrait mode*/
+	.beautiful1 { 	
+		position: absolute;
+		top: 60%;
+		left: 29%;
+	}
+	.friendship1 { 
+		position: absolute;
+		top: 69%;
+		left: 23%;
+	}
+	.truth1 { 
+		position: absolute;
+		top: 73%;
+		left: 40%;
+	}
+	.wisdom1 { 
+		position: absolute;
+		top: 51%;
+		left: 49%;
+	}
 			/*vocab portrait*/
 	body.style2 {
 		background-image: url(images/backgrounds/horizontal_background.png); 
@@ -259,46 +264,13 @@ body.style2 {  			/*vocab page*/
 		background-size: 100%;
 		background-attachment:fixed;
 		}
-	.filler {
-		margin-top:3.5em;
-		margin-left:auto;
-		margin-right:auto;
-		height:80%;
-		width: 94.872%;
-		display:inline-block;
-		text-align:center;
-	}
 	.filler2 {
 		background-image: url(images/backgrounds/horizontal_background.png); 
-		/*background-size: 100%;*/
 		background-position: bottom left;
-		/*display:block;
-		width: 3em;
-		margin-left:0%;
-		margin-right: 0%;
-		margin-top:0em;
-		margin bottom: 0%;
-		text-align:center;
-		position:fixed;
-		bottom: 0em;
-		left: 0em;
-		height:100%;*/
 	}
 	.filler3 {
 		background-image: url(images/backgrounds/horizontal_background.png);
 		background-position: top left;
-		/*background-size: 100%;*/
-		/*display:block;
-		width: 3em;
-		margin-left:0%;
-		margin-right: 0%;
-		margin-top:0em;
-		margin bottom: 0em;	
-		text-align:center;
-		position:fixed;
-		top:0em;
-		right: 0em;
-		height:100%;*/
 	}
 	.vocab_vocab {
 		height:14em;
@@ -309,22 +281,17 @@ body.style2 {  			/*vocab page*/
 		width: 620%;	/*adjust for wrap around effect in portrait mode*/
 		display: block;
 		background-attachment:fixed;
-		
 		min-width: 100%;		
 	}
 	.vocab_vocab .thumbnails {
 		display:inline-block;
 		margin: 0em 1em 1em 0em;
-		/*text-wrap:suppress;*/
 		float: left;
 		min-width: 1em;
 	}
 	.vocab_vocab .thumbnails img {
 		height:4em;	
 	}
-	/*#vocab_define .vocab_img img{
-		height: 9em; 
-	}*/
 	#vocab_define {
 		position:fixed;
 		margin-top:3.5em;
@@ -351,9 +318,6 @@ body.style2 {  			/*vocab page*/
 		right: 0em;
 		white-space: pre-line;
 	}
-		#vocab_define h1 {
-		/*height: .1em;*/	
-	}
 	.vocab_instruction h1 {
 		font-size:1.5em;
 	}
@@ -369,26 +333,5 @@ body.style2 {  			/*vocab page*/
 	}
 	.contact_content {
 		margin-left: 20.635%;
-	}
-		
-	.beautiful1 { 
-		position: absolute;
-		top: 60%;
-		left: 29%;
-	}
-	.friendship1 { 
-		position: absolute;
-		top: 69%;
-		left: 23%;
-	}
-	.truth1 { 
-		position: absolute;
-		top: 73%;
-		left: 40%;
-	}
-	.wisdom1 { 
-		position: absolute;
-		top: 51%;
-		left: 49%;
-	}
+	}		
 }
