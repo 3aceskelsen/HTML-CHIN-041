@@ -42,6 +42,7 @@ var isiPad = navigator.userAgent.indexOf('iPad') != -1;
 					IsLog.c("$(this): "+$(this));
 					IsLog.c("this class: "+$(this).attr("class"));
 					IsLog.c("Click handler fired"); // problem solving
+					
 				});
 		}
 		});
