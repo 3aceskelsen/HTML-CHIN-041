@@ -4,7 +4,7 @@ var isiPad = navigator.userAgent.indexOf('iPad') != -1;
 	$(function() {
     $.stayInWebApp();
 	
-	/*checkDevice();*/
+	checkDevice();
 		checkiPadStandAlone();
 });
 		var characters;
