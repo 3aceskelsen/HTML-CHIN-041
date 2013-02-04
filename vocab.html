@@ -10,89 +10,42 @@
 	<script type="text/javascript" src="includes/assets/jquery-1.7.1.min.js"></script>
 	<script type="text/javascript" src="includes/assets/jquery.stayInWebApp.min.js"></script>
 	<script type="text/javascript" src="http://isdev.byu.edu/is/share/HTML_Resources/JavaScript/debug.lib.js"></script>
+	<script type="text/javascript" src="includes/assets/iPad.js"></script>
 </head>
-<script type="text/javascript">
-	$(document).ready(function() {							//	This runs the following code when the document is finished loading
-	$(function() {
-    $.stayInWebApp();
-});
-		var characters;
-		$.getJSON("includes/assets/characters.json", function(json){
-			characters = json;
-			var targetHolder = $("#character-list");
-			targetHolder.html("");
-			for(var objNumber in characters) {
-				var newDiv = $("<div></div>");
-				newDiv.attr("class", "thumbnails");
-				newDiv.attr("character-index", objNumber);
-				var newH3 = $("<h3>"+characters[objNumber]["chinese-character"]+"</h3>");
-				newDiv.append(newH3);
-				targetHolder.append(newDiv);
-				//	targetHolder.append(document.createTextNode(" "));
-				//IsLog.c(characters[objNumber]);
-				newDiv.bind("click touch touchstart", function(){
-					var selectedCharacterIndex = $(this).attr("character-index");
-					
-					$("#lesson-title").html(characters[selectedCharacterIndex]["lesson"]);
-					$("#chinese-character").html(characters[selectedCharacterIndex]["chinese-character"]);
-					if(characters[selectedCharacterIndex]["chinese-character"].length >= 4) {
-						$("#chinese-character").css("font-size", "5em");
-					} else if(characters[selectedCharacterIndex]["chinese-character"].length >= 3) {
-						$("#chinese-character").css("font-size", "6em");
-					} else if(characters[selectedCharacterIndex]["chinese-character"].length >= 2) {
-						$("#chinese-character").css("font-size", "7em");
-					} else {
-						$("#chinese-character").css("font-size", "auto");
-					}
-					$("#pronunciation").html(characters[selectedCharacterIndex]["pronunciation"]);
-					$("#translation").html(characters[selectedCharacterIndex]["translation"]);
-					
-					$(".click_background").removeClass("click_background");
-					$(this).addClass("click_background");
-					IsLog.c("this: "+this);
-					IsLog.c("$(this): "+$(this));
-					IsLog.c("this class: "+$(this).attr("class"));
-					IsLog.c("Click handler fired"); // problem solving
-					IsLog.c("Click handler fired"); // problem solving
-					
-				});
-		}
-		});
-	});
-</script>
-
 <body class="style2">
-	<div class="filler">
-	&nbsp;
-	</div>
-	<div id="vocab_define">
-		<h1 id="lesson-title">Vocabulary</h1>
-		<div class="vocab_img">
-			<h1 id="chinese-character">零</h1>
+	<div class="page">
+		<div class="filler">
+		&nbsp;
 		</div>
-		<div class="caption">
-			<p class="font-bold" id="pronunciation">líng<!--The definition of the word--></p>
-			<p class="font-normal" id="translation">Zero<!--an example of the word being used goes here!--></p>
+		<div id="vocab_define">
+			<h1 id="lesson-title">Vocabulary</h1>
+			<div class="vocab_img">
+				<h1 id="chinese-character">零</h1>
+			</div>
+			<div class="caption">
+				<p class="font-bold" id="pronunciation">líng<!--The definition of the word--></p>
+				<p class="font-normal" id="translation">Zero<!--an example of the word being used goes here!--></p>
+			</div>
 		</div>
+		<div class="filler2">
+			&nbsp;
+		</div>
+		<div class="filler3">
+			&nbsp;
+		</div>
+		<div class="vocab_vocab" id="character-list">
+		</div>
+		<div class="vocab_instruction">
+		<h1>Click on the symbol to see its meaning</h1>
+		</div>
+		<nav>
+			<a href="home.html">Home</a>
+			<a href="vocab.html">Vocab</a>
+			<a href="contact_us.html">Contact Us</a>
+		</nav>
+		<footer><span>&copy; BYUis</span></footer>
+		<img class="logo1" src="images/logo.png" />
+		<img class="logo_symbol" src="images/byu.png" />	
 	</div>
-	<div class="filler2">
-	&nbsp;
-	</div>
-	<div class="filler3">
-	&nbsp;
-	</div>
-	<div class="vocab_vocab" id="character-list">
-	</div>
-	<div class="vocab_instruction">
-	<h1>Click on the symbol to see its meaning</h1>
-	</div>
-	<nav>
-		<a href="home.html">Home</a>
-		<a href="vocab.html">Vocab</a>
-		<a href="contact_us.html">Contact Us</a>
-	</nav>
-	<footer><span>&copy; BYUis</span></footer>
-	<img class="logo1" src="images/logo.png" />
-	<img class="logo_symbol" src="images/byu.png" />	
 </body>
 </html>
