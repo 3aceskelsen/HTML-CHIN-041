@@ -21,7 +21,7 @@ body h1{
 	font-size: 4em;
 	}																	/* Global Layout */
 body {
-	background-image: url(images/backgrounds/chinese_background.png);	/*Background for all pages but vocab in landscape*/
+	background-image: url(images/backgrounds/portrait_background2.png);	/*Background for all pages but vocab in landscape*/
 	background-position: top left;
 	background-attachment:fixed;
 	background-size: cover;
