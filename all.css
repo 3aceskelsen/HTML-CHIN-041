@@ -3,25 +3,26 @@
 
 																	/* Global Styles */
 a:link {
-	color:#FF0;
+	color: #000;
 	}
 a:visited {
-	color:#6C3;
+	color: #000;
 	}
 a:hover {
-	color:#39F;
+	color: #000;
 	}   /* mouse over link */
 a:active {
-	color:#33C;
+	color:#000;
 	}
 body {
 	font-family:noteworthy;
+	color: #000;
 	}
 body h1{
 	font-size: 4em;
 	}																	/* Global Layout */
 body {
-	background-image: url(images/backgrounds/portrait_background2.png);	/*Background for all pages but vocab in landscape*/
+	background-color: #FFF;	/*Background for all pages but vocab in landscape*/
 	background-position: top left;
 	background-attachment:fixed;
 	background-size: cover;
@@ -39,8 +40,8 @@ body {
 	right: 0em;
 	height: 5em;
 	opacity:0.5;
-	filter:alpha(opacity=40);		/*filter is for older internet explorer*/
-	} 
+	filter:alpha(opacity=40);		
+	} /*filter is for older internet explorer*/
 nav { 
 	position: fixed;
 	bottom: 3em;
@@ -94,14 +95,14 @@ footer {
 	left: 57%;
 }
 body.style2 {  			/*vocab page*/
-	background-image: url(images/backgrounds/vertical_background.png); 
+	background-color: #0CF; 
 	background-size: auto;
 	background-position: top left;
 	background-attachment: fixed;
 }
 	/*vocab landscape*/
 .filler2 {		/*Fillers used to hide scrolling in unwanted areas (top and bottom of page)*/
-	background-image:url(images/backgrounds/vertical_background.png);
+	background-color: #666;
 	background-position: top left;
 	background-attachment: fixed;
 	display:block;
@@ -117,7 +118,7 @@ body.style2 {  			/*vocab page*/
 	height:15%;
 }
 .filler3 {
-	background-image: url(images/backgrounds/vertical_background.png);
+	background-color: #666;
 	background-position: top left;
 	display:block;
 	width: 100%;
@@ -203,7 +204,7 @@ body.style2 {  			/*vocab page*/
 }
 .vocab_instruction h1 {
 	font-size:2em;
-	text-shadow: 0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff,0em 0em 1em #fff;
+	text-shadow: 0em 0em 1em #fff,0em 0em 1em #fff;
 }
 	/*contact us landscape*/
 .contact_contact-us { 
@@ -222,10 +223,10 @@ body.style2 {  			/*vocab page*/
 @media screen and (max-width: 768px) {		/*for iPad Portrait mode*/
 		/* Global Layout */
 	body {
-		background-image: url(images/backgrounds/portrait_background2.png);
+		/*background-color: #06F;
 		background-position: top left;
 		background-size: cover;
-		background-attachment:fixed;
+		background-attachment:fixed;*/
 		margin:0;
 		white-space:nowrap;
 	}
@@ -258,7 +259,7 @@ body.style2 {  			/*vocab page*/
 		left: 49%;
 	}
 			/*vocab portrait*/
-	body.style2 {
+	/*body.style2 {
 		background-image: url(images/backgrounds/horizontal_background.png); 
 		background-position: top left;
 		background-size: 100%;
@@ -271,13 +272,13 @@ body.style2 {  			/*vocab page*/
 	.filler3 {
 		background-image: url(images/backgrounds/horizontal_background.png);
 		background-position: top left;
-	}
+	}*/
 	.vocab_vocab {
-		height:14em;
-		margin-top: 18em;
+		height: 12em;
+		margin-top: 23em;
 		margin-left: auto;
 		margin-right: auto;
-		margin-bottom: 15%;
+		margin-bottom: 12%;
 		width: 620%;	/*adjust for wrap around effect in portrait mode*/
 		display: block;
 		background-attachment:fixed;
