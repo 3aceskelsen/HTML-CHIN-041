@@ -5,7 +5,7 @@ var isiPad = navigator.userAgent.indexOf('iPad') != -1;
     $.stayInWebApp();
 	
 	/*checkDevice();*/ 		/*Calls function to see if it is an iPad*/
-		checkiPadStandAlone();
+		/*checkiPadStandAlone();*/
 });
 		var characters;		/*Imports the chinese characters*/
 		$.getJSON("includes/assets/characters.json", function(json){

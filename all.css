@@ -3,58 +3,47 @@
 
 																	/* Global Styles */
 a:link {
-	color: #000;
+	color: #333;
 	}
 a:visited {
-	color: #000;
+	color: #333;
 	}
 a:hover {
-	color: #000;
+	color: #3330;
 	}   /* mouse over link */
 a:active {
-	color:#000;
+	color:#333;
 	}
 body {
-	font-family:noteworthy;
-	color: #000;
+	font-family: Helvetica, Arial;
+	color: #333;
 	}
 body h1{
 	font-size: 4em;
 	}																	/* Global Layout */
 body {
-	background-color: #FFF;	/*Background for all pages but vocab in landscape*/
+	background-color: #fcfcfc;	/*Background for all pages but vocab in landscape*/
 	background-position: top left;
 	background-attachment:fixed;
 	background-size: cover;
-	margin:0;
+	margin: 0;
+	white-space: nowrap;
 	}
-.logo1 {
-	position:fixed;
-	top: 0em;
-	left: 0em;
-	height: 4.3em;
-	}
-.logo_symbol {
-	position:fixed;
-	top: 0em;
-	right: 0em;
-	height: 5em;
-	opacity:0.5;
-	filter:alpha(opacity=40);		
-	} /*filter is for older internet explorer*/
 nav { 
 	position: fixed;
-	bottom: 3em;
-	left: 2em;
+	bottom: .7em;
+	left: 1.5em;
+	z-index:100;
 	}
 nav a {
 	padding: 0em 1em 0em 0em;
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 footer {
 	position: fixed;
-	bottom: 2em;
-	right:1em;
+	bottom: 0em;
+	right:0em;
+	z-index:100;
 	}
 															/* Page-specific Layout/style Landscape*/
 .beautiful1, .friendship1, .truth1, .wisdom1 {		/*Allows for transitions on homepage symbols between portrait and landscape*/
@@ -95,16 +84,24 @@ footer {
 	left: 57%;
 }
 body.style2 {  			/*vocab page*/
-	background-color: #0CF; 
+	background-color: #fcfcfc; 
 	background-size: auto;
 	background-position: top left;
 	background-attachment: fixed;
 }
 	/*vocab landscape*/
-.filler2 {		/*Fillers used to hide scrolling in unwanted areas (top and bottom of page)*/
-	background-color: #666;
-	background-position: top left;
-	background-attachment: fixed;
+.filler {
+	background-color: #fcfcfc;
+	display:block; 
+	width: 41%; 
+	text-align:center;
+	position: fixed;
+	height: 50em;
+	z-index: 50;
+	top: 0;
+}
+.filler3 {		/*Fillers used to hide scrolling in unwanted areas (top and bottom of page)*/
+	background-color: #b8b9b0;
 	display:block;
 	width: 100%;
 	margin-left:0%;
@@ -115,11 +112,11 @@ body.style2 {  			/*vocab page*/
 	position:fixed;
 	bottom: 0em;
 	right: 0em;
-	height:15%;
+	height: 3em;
+	z-index: 100;
 }
-.filler3 {
-	background-color: #666;
-	background-position: top left;
+.filler2 {
+	background-color: #b8b9b0;
 	display:block;
 	width: 100%;
 	margin-left:0%;
@@ -130,7 +127,8 @@ body.style2 {  			/*vocab page*/
 	position:fixed;
 	top:0em;
 	right: 0em;
-	height:10em;
+	height: 3.5em;
+	z-index: 100;
 }
 #vocab_define p.font-normal{
 	font-size:1.4em;
@@ -141,6 +139,7 @@ body.style2 {  			/*vocab page*/
 	font-size:1.6em;
 	font-weight:bold;
 	margin-bottom: 0em;
+	margin-top: 0em;
 }	
 #vocab_define {
 	position:fixed; /* this is used for fixing scrolling*/
@@ -148,7 +147,7 @@ body.style2 {  			/*vocab page*/
 	width: 38.031%; 
 	margin-left: 2.564%;
 	margin-right: 1.28%; 
-	margin-top: 10em;
+	margin-top: 5.5em;
 	text-align:center;
 	left:0;
 	z-index: 100;
@@ -162,6 +161,10 @@ body.style2 {  			/*vocab page*/
 #vocab_define #chinese-character {
 	font-size: 8em;
 }
+.caption {
+	max-width:100%;
+	white-space: normal;
+}
 .vocab_img h1{  /*made for current modifications with text symbols*/
 	font-size:13em;	
 }
@@ -170,24 +173,30 @@ body.style2 {  			/*vocab page*/
 	margin-top: 0em;
 	margin-bottom: 0em;
 }
-.vocab_vocab {		/*List of vocabulary terms*/
-	display:inline-block; 
-	width: 50.269%; 
-	margin-left: 41.875%; 
-	margin-right: 1.28%; 
-	margin-top: 15%;
-	padding-bottom: 8em;
+/*List of vocabulary terms*/
+.vocab_vocab {
+	height: 20em;
+	margin-top: 5.5em;
+	margin-left: 41.875%;
+	margin-right: auto;
+	margin-bottom: 12%;
+	width: 270%;	/*adjust for wrap around effect in portrait mode*/
+	display: block;
+	background-attachment:fixed;
+	min-width: 100%;
+	z-index: 0;		
 }
 .vocab_vocab .thumbnails {
 	display:inline-block;
-	margin: 0em 0em 2px 0px;
-	min-width:  14.3965%;
-	border-style: solid;	
-	border-width: thin;
-	border-color: transparent;
+	margin: 0em 1em 1em 0em;
+	float: left;
+	min-width: 1em;
+}
+.vocab_vocab .thumbnails img {
+	height:4em;	
 }
 .click_background{		/*Element created in Javascript that changes color when clicked*/
-	background-image: url(images/backgrounds/click-background.png) !important;
+	background-image: url(images/backgrounds/click-background3.png) !important;
 }
 .vocab_vocab .thumbnails:nth-child(even) {
 	background-image: url(images/backgrounds/shaded-background.png);
@@ -199,12 +208,12 @@ body.style2 {  			/*vocab page*/
 }
 .vocab_instruction {
 	position:fixed;
-	bottom: 1.5em;
-	right: 5em;
+	top: 0em;
+	right: 1em;
+	z-index:100;
 }
 .vocab_instruction h1 {
-	font-size:2em;
-	text-shadow: 0em 0em 1em #fff,0em 0em 1em #fff;
+	font-size:1.5em;
 }
 	/*contact us landscape*/
 .contact_contact-us { 
@@ -273,13 +282,19 @@ body.style2 {  			/*vocab page*/
 		background-image: url(images/backgrounds/horizontal_background.png);
 		background-position: top left;
 	}*/
+	.filler {
+		display: none;
+		width: 0em;
+		height: 0em;	
+		position: static;
+	}
 	.vocab_vocab {
-		height: 12em;
-		margin-top: 23em;
+		height: 16em;
+		margin-top: 21.5em;
 		margin-left: auto;
 		margin-right: auto;
 		margin-bottom: 12%;
-		width: 620%;	/*adjust for wrap around effect in portrait mode*/
+		width: 340%;	/*adjust for wrap around effect in portrait mode*/
 		display: block;
 		background-attachment:fixed;
 		min-width: 100%;		
@@ -295,38 +310,43 @@ body.style2 {  			/*vocab page*/
 	}
 	#vocab_define {
 		position:fixed;
-		margin-top:3.5em;
-		margin-left:auto;
-		margin-right:auto;
-		width:100%;
 		display:inline-block;
+		width:93.4755%;
+		margin-top: 4em;
+		margin-left:4.7619%;
+		margin-right:auto;
 		text-align:center;	
+		z-index: 110;
+		top: 2em;
 	}
 	#lesson-title {
 		display: block;
-		width: 40%;	
+		width: 56.3478%;	
 		float: left;
 	}
 	.vocab_img {
 		display: inline-block;
-		width: 40%;	
+		width: 56.3478%;	
 		float: left;
 		clear: left;
 	}
 	.caption {
-		float: right;	
-		width: 60%;
+		float: left;
+		width: 36.1258%;
 		right: 0em;
 		white-space: pre-line;
+		top: 0em;
+		text-align: left;
+		
 	}
-	.vocab_instruction h1 {
+	/*.vocab_instruction h1 {
 		font-size:1.5em;
 	}
 	.vocab_instruction {
 		position:fixed;
 		bottom: 1.8em;
 		right: 5em;
-	}
+	}*/
 			/*contact us portrait*/
 	.contact_contact-us { 
 		margin-left: 4.762%;
